@@ -53,9 +53,9 @@ allow {
 	input.action == permission.action
 	input.type == permission.type
 
-	# unless user location is outside UK
+	# unless user location is outside SE
 	country := data.users[input.user].location.country
-	country == "UK"
+	country == "SE"
 }
 
 # user_is_admin is true if...
